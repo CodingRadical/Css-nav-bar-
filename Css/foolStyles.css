@@ -1,0 +1,65 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /*The box-sizing property when set to border-box will take out the margins value from the width and height of the elemtns
+  The padding of zero to all the elmement will remove all the default paddings*/
+}
+body {
+  background-color: #fefefe;
+}
+.fixed { /* The header elemnt with class fixed has been set fixed to the top of the page*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; /* the high z-index will make this element overlay all other content*/
+  width: 100%;/*will take up full with of the body*/
+  height: auto;/*wil take as much height as needed*/
+  background-color: #00a087;
+}
+nav {
+  background-color: #fefefe;
+  max-width: 60em; /*I dont want my nav to increase more that 60em no matter the size of the window*/
+  margin: 1em auto 0;/*nav will be centered in the header because of the left and right auto margins*/
+  border-bottom: 1px solid #333;
+  box-shadow: 5px 5px 2px #666666;
+}
+ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fefefe;
+}
+  #active { /*the actie class*/
+    background: #00a087;
+    color: #fff;
+  }
+  ul li {
+    float: right;
+  }
+
+.btn {/*I grouped my anchor tabs in a class of "btn" to apple a general style to them all*/
+  display:inline-block; /*anchors are inline by defult so had to change them to block level*/
+color: #333;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+transition: 0.3s;
+font-size: 17px;
+}
+.btn:hover{/*hover state of the btn*/
+  color: #fff;
+  background-color: #40bf80;
+}
+.btn:active{/*active state of the btn*/
+  color: #fff;
+  background-color: #EABC3A;
+}
+section { /*semantic elemnent used to represent the page content*/
+  background: #ccc;
+  height: 2000px;
+  max-width: 60em; /*centered and same width as the navigation bar*/
+  margin: 10.825em auto;
+}
